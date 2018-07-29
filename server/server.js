@@ -8,23 +8,17 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server, {
   serveClient: true
 });
+const mongoose = require('mongoose');
+const bluebird = require('bluebird');
 
 
-io.on('connection', function (socket) {
-  socket.emit('connected', 'connect ok');
 
-  socket.join('all');
 
-  socket.on('msg', content => {
-    const obj ={
-      date: new Date(),
-      content: content,
-      username: socket.id
-    };
-    socket.emit('message', obj);
-    socket.to('all').emit('message', obj)
-  })
-});
+
+mongoose.connect('mongodb://localhost:27017/chat', {useNewUrlParser: true});
+mongoose.Promise = bluebird;
+
+
 
 nunjucks.configure('../views', {
   autoescape: true,
@@ -37,6 +31,8 @@ app.get('/', (req, res) => {
 
   });
 });
+
+require('./sockets');
 
 app.use('/assets', express.static('../public'));
 
