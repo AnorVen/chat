@@ -46,9 +46,13 @@ $(document).ready(() => {
 
 		var selector = $("textarea[name='message']");
 		var messageContent = selector.val().trim();
+		var mesAll = {
+			messageContent: messageContent,
+			username: $('#name').text(),
+		};
 		console.log(messageContent);
 		if (messageContent !== '') {
-			socket.emit('msg', messageContent);
+			socket.emit('msg', mesAll);
 			selector.val('');
 		}
 	});

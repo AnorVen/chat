@@ -8,10 +8,11 @@ module.exports = io => {
 		socket.join('all');
 
 		socket.on('msg', content => {
+			console.log(content);
 			const obj = {
 				date: new Date(),
-				content: content,
-				username: socket.username,
+				content: content.messageContent,
+				username: content.username,
 			};
 
 			MessageModule.create(obj, err => {
