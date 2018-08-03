@@ -35,9 +35,6 @@ nunjucks.configure('../views', {
 	express: app,
 });
 
-require('./sockets')(io);
-require('./router')(app);
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -46,6 +43,8 @@ app.use(bodyParser.json());
 
 app.use(cookieParser());
 
+require('./sockets')(io);
+require('./router')(app);
 server.listen(7777, '127.0.0.1', () => {
 	console.log('server start on localhost:7777');
 });

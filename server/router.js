@@ -13,8 +13,9 @@ function checkAuth(req, res, next) {
 		'jwt',
 		{ session: false },
 		(err, decryptToken, jwtError) => {
-			if (jwtError != void 0 || err != void 0)
+			if (jwtError != void 0 || err != void 0) {
 				return res.render('index.html', { error: err || jwtError });
+			}
 			req.user = decryptToken;
 			next();
 		}
@@ -32,7 +33,7 @@ module.exports = app => {
 
 	app.get('/', checkAuth, (req, res) => {
 		res.render('index.html', {
-			date: new Date(),
+			username: req.user.user,
 		});
 	});
 
