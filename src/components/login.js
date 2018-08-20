@@ -1,34 +1,41 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class login extends Component {
-	constructor() {
-		super();
-		const user = {
-			username: 'Admin',
-			password: '12345',
+	constructor(props) {
+		super(props);
+		this.state = {
+			redirectToReferrer: false,
 		};
 	}
 
+	user = node => (this._user = node);
+	pass = node => (this._pass = node);
+
 	auth = () =>
-		this.user.password === this.password.current.value &&
-		this.user.username === this.username.current.value
-			? localStorage.setItem('isAuth', 'true')
-			: alert(1);
+		this._user.value === 'Admin' && this._pass.value === '12345'
+			? this.setState({
+					redirectToReferrer: true,
+			  })
+			: console.log(this.state.redirectToReferrer);
 
 	render() {
+		if (this.state.redirectToReferrer) {
+			return <Redirect to="/profile" />;
+		}
+
 		return (
 			<div>
 				<label htmlFor="">
 					{' '}
 					login
-					<input type="text" ref="username" />
+					<input type="text" ref={this.user} />
 				</label>{' '}
 				<br />
 				<label htmlFor="">
 					{' '}
 					pass
-					<input type="text" ref="password" />
+					<input type="text" ref={this.pass} />
 				</label>
 				<br />
 				<button onClick={this.auth}>auth</button>
