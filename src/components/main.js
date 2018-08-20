@@ -5,6 +5,7 @@ class main extends Component {
 		return (
 			<div>
 				<p>Главная</p>
+				<button onClick={localStorage.removeItem('isAuth')}>AuthOUT</button>
 			</div>
 		);
 	}
