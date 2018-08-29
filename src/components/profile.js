@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const profile = () => (
 	<div>
 		<p>Вася</p>
-		<Link to="/">главная</Link>
 	</div>
 );
 

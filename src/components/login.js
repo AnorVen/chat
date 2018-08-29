@@ -20,20 +20,22 @@ class login extends Component {
 			: console.log(this.state.redirectToReferrer);
 
 	render() {
+		if (localStorage.getItem('isAuth')) {
+			return <Redirect to="/profile" />;
+		}
 		if (this.state.redirectToReferrer) {
+			localStorage.setItem('isAuth', 'true');
 			return <Redirect to="/profile" />;
 		}
 
 		return (
 			<div>
 				<label htmlFor="">
-					{' '}
 					login
 					<input type="text" ref={this.user} />
-				</label>{' '}
+				</label>
 				<br />
 				<label htmlFor="">
-					{' '}
 					pass
 					<input type="text" ref={this.pass} />
 				</label>

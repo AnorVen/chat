@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 class main extends Component {
+	logout = () => localStorage.removeItem('isAuth');
+
 	render() {
 		return (
 			<div>
 				<p>Главная</p>
-				<button onClick={localStorage.removeItem('isAuth')}>AuthOUT</button>
+				<button onClick={this.logout}>AuthOUT</button>
 			</div>
 		);
 	}

@@ -35,6 +35,7 @@ const App = () => (
 			<Route path="/news" component={news} />
 			<Route path="/login" component={login} />
 			<PrivateRoute path="/profile" component={profile} />
+			{console.log(localStorage.getItem('isAuth'))}
 		</div>
 	</Router>
 );
