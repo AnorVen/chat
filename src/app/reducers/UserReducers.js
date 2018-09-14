@@ -1,6 +1,7 @@
 import axios from 'axios';
+import Dispatcher from '../Dispatcher';
 
-export default function() {
+export default function UserReducers() {
 	let users = [];
 	/* let users =[
 			 {
@@ -76,6 +77,6 @@ export default function() {
 
 	axios.get('https://jsonplaceholder.typicode.com/users').then(response => {
 		users = response.data;
+		return users;
 	});
-	return users;
 }
