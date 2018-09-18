@@ -5,7 +5,7 @@ import UserPortfolio from '../components/User/User';
 export default class User extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
+		/*	this.state = {
 			user: null,
 		};
 		axios
@@ -16,11 +16,11 @@ export default class User extends React.Component {
 				this.setState({
 					user: response.data,
 				});
-			});
+			});*/
 	}
 	render() {
 		return (
-			<div>{this.state.user && <UserPortfolio {...this.state.user} />}</div>
+			<div>{this.props.user && <UserPortfolio {...this.props.user} />}</div>
 		);
 	}
 }

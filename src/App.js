@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, Link, Switch, BrowserRouter } from 'react-router-dom';
-import { createStore } from 'redux';
-import { allReucers, middleware } from './app/reducers/index';
+import { Route, Link, Switch, BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import Layout from './app/layouts/Layout';
@@ -21,8 +18,7 @@ import './app/styles/bootstrap/css/bootstrap.css';
 import './app/styles/bootstrap/css/bootstrap-theme.css';
 
 import './App.css';
-
-const store = createStore(allReucers, middleware);
+import store from './app/stores/store';
 
 class App extends Component {
 	render() {

@@ -1,9 +1,8 @@
-export default function(state = [], action) {
-	switch (action.type) {
-		case 'USER_SELECTED':
-			return action.payload;
-			break;
-		default:
-			return state;
-	}
+import * as UsersConst from '../const/UsersConst';
+
+export function usersActiveReduser(
+	state = { user: [], is_fetching: false },
+	action
+) {
+	return state;
 }

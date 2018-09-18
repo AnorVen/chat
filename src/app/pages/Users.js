@@ -1,10 +1,37 @@
 import React from 'react';
 import UsersList from '../components/User/UsersList';
+import { fetchUsers } from '../actions/UsersActions';
+import { connect } from 'react-redux';
 
-export default class Users extends React.Component {
+class Users extends React.Component {
+	constructor() {
+		super(...arguments);
+		let users = fetchUsers();
+		this.props.dispatch(users);
+	}
+
 	render() {
 		return (
-			<div>{!this.props.children ? <UsersList /> : this.props.children}</div>
+			<div>
+				{!this.props.children ? (
+					this.props.is_fetching ? (
+						'loading...'
+					) : (
+						<UsersList users={this.props.users} />
+					)
+				) : (
+					this.props.children
+				)}
+			</div>
 		);
 	}
 }
+
+function mapStateToProps(store) {
+	return {
+		users: store.users.users,
+		is_fetching: store.users.is_fetching,
+	};
+}
+
+export default connect(mapStateToProps)(Users);
