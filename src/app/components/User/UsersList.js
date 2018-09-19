@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import User from './User';
 import UserDetails from './UserDetails';
 
+/*	<User onClick={() => this.props.select(user)} key={index} {...user} />*/
 export default class UsersList extends Component {
 	render() {
 		if (!this.props.users.length) {
@@ -9,9 +10,7 @@ export default class UsersList extends Component {
 		}
 
 		let users = this.props.users.map((user, index) => {
-			return (
-				<User onClick={() => this.props.select(user)} key={index} {...user} />
-			);
+			return <User key={index} {...user} />;
 		});
 
 		return (

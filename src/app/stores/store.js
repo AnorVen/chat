@@ -1,19 +1,25 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 
-import logger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 import promice from 'redux-promise-middleware';
 
 //redusers
 
-import { usersReduser } from '../reducers/UserReducers';
+import { usersReducer } from '../reducers/UserReducers';
 import { usersActiveReduser } from '../reducers/UserActiveRedusers';
 
 const redusers = combineReducers({
-	users: usersReduser,
+	users: usersReducer,
 	user: usersActiveReduser,
 });
-const midleweare = applyMiddleware(promice(), logger());
 
-const store = createStore(redusers, midleweare);
+const logger = createLogger({
+	duration: true,
+});
+const initialState = {};
+
+const middleware = applyMiddleware(promice(), logger);
+
+const store = createStore(redusers, initialState, middleware);
 
 export default store;

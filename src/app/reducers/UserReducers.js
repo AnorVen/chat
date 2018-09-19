@@ -1,15 +1,15 @@
 import * as UsersConst from '../const/UsersConst';
 
-export function usersReduser(
+export const usersReducer = (
 	state = { users: [], is_fetching: false },
 	action
-) {
+) => {
 	switch (action.type) {
 		case UsersConst.FETCH_USERS_PENDING: {
 			state = { ...state, is_fetching: true };
 			break;
 		}
-		case UsersConst.FETCH_USERS_FULFIllED: {
+		case UsersConst.FETCH_USERS_FULFILLED: {
 			state = { ...state, is_fetching: false, users: action.payload.data };
 			break;
 		}
@@ -23,4 +23,4 @@ export function usersReduser(
 		}
 	}
 	return state;
-}
+};
