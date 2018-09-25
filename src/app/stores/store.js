@@ -1,16 +1,16 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 import { createLogger } from 'redux-logger';
-import promice from 'redux-promise-middleware';
+import promise from 'redux-promise-middleware';
 
 //redusers
 
-import { usersReducer } from '../reducers/UserReducers';
-import { usersActiveReduser } from '../reducers/UserActiveRedusers';
+import { usersReducer } from '../reducers/UsersReducers';
+import { userReducer } from '../reducers/UserRedusers';
 
 const redusers = combineReducers({
 	users: usersReducer,
-	user: usersActiveReduser,
+	user: userReducer,
 });
 
 const logger = createLogger({
@@ -18,7 +18,7 @@ const logger = createLogger({
 });
 const initialState = {};
 
-const middleware = applyMiddleware(promice(), logger);
+const middleware = applyMiddleware(promise(), logger);
 
 const store = createStore(redusers, initialState, middleware);
 

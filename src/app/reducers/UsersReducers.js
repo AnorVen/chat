@@ -6,21 +6,23 @@ export const usersReducer = (
 ) => {
 	switch (action.type) {
 		case UsersConst.FETCH_USERS_PENDING: {
-			state = { ...state, is_fetching: true };
-			break;
+			return (state = { ...state, is_fetching: true });
 		}
 		case UsersConst.FETCH_USERS_FULFILLED: {
-			state = { ...state, is_fetching: false, users: action.payload.data };
-			break;
+			return (state = {
+				...state,
+				is_fetching: false,
+				users: action.payload.data,
+			});
 		}
 		case UsersConst.FETCH_USERS_REJECTED: {
-			state = {
+			return (state = {
 				...state,
 				is_fetching: false,
 				error_message: action.payload.message,
-			};
-			break;
+			});
 		}
+		default:
+			return state;
 	}
-	return state;
 };

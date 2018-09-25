@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Blog template",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work01.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sunt nulla",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work02.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Android.com website",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work03.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Dashboard template",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work04.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Text-heavy website",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work05.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Ex officia laborum",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work06.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Stand-alone article",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work07.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 8,
+    "title": "MDL website",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work08.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Consequat ut quis",
+    "preview": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tellus sollicitudin, semper est a, auctor nisl. Sed sollicitudin malesuada nulla, vel tincidunt sem ultrices sit amet. In aliquam tincidunt leo ac bibendum. Cras faucibus, ligula accumsan gravida feugiat, nibh metus vestibulum eros, et sagittis tortor felis vel diam. Aenean non erat augue. Morbi ante nunc, lobortis eget lectus id, consectetur feugiat lacus. Aenean tempor nibh at sodales hendrerit. Suspendisse nunc elit, viverra in varius at, dictum nec nibh. Phasellus eu massa eleifend, tincidunt dui quis, tristique lacus. Aenean leo nibh, interdum mollis accumsan eget, dignissim a turpis. Suspendisse in dolor felis. Maecenas in augue sem. Sed est ipsum, dapibus vehicula lacus at, vulputate venenatis est.",
+    "includes": "Design, UX and Frontend Development",
+    "image": "example-work09.jpg",
+    "image_example": "portfolio-example-01.jpg"
+  }
+]
