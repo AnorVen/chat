@@ -7,7 +7,9 @@ class User extends React.Component {
 			<div className="panel panel-default">
 				<div className="panel-heading">
 					<h3 className="panel-title">
-						<Link to={`/users/${this.props.id}`}>{this.props.username}</Link>
+						<Link to={`/users/${this.props.id}`} {...this.props}>
+							{this.props.username}
+						</Link>
 					</h3>
 				</div>
 				<div className="panel-body" onClick={this.props.onClick}>

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import UserPortfolio from '../components/User/User';
 import { fetchUser } from '../actions/UserAction';
 import { connect } from 'react-redux';
+import UserDetails from '../components/User/UserDetails';
 
 class User extends Component {
 	constructor() {
@@ -13,9 +12,7 @@ class User extends Component {
 	}
 
 	render() {
-		return (
-			<div>{this.props.user && <UserPortfolio {...this.props.user} />}</div>
-		);
+		return <div>{this.props.user && <UserDetails {...this.props.user} />}</div>;
 	}
 }
 

@@ -1,26 +1,22 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class UserDetails extends React.Component {
 	render() {
-		if (!this.props.user) {
-			return <p>Нажмите на имя пользователя</p>;
-		}
 		return (
-			<div className="panel-body">
-				<p>{this.props.user.name}</p>
-				<p>{this.props.user.email}</p>
-				<p>{this.props.user.phone}</p>
-				<p>{this.props.user.website}</p>
+			<div className="panel panel-default">
+				<div className="panel-heading">
+					<h3 className="panel-title">{this.props.username}</h3>
+				</div>
+				<div className="panel-body" onClick={this.props.onClick}>
+					<p>{this.props.name}</p>
+					<p>{this.props.email}</p>
+					<p>{this.props.phone}</p>
+					<p>{this.props.website}</p>
+				</div>
 			</div>
 		);
 	}
 }
 
-function mapStateToProps(state) {
-	return {
-		user: state.active,
-	};
-}
-
-export default connect(mapStateToProps)(UserDetails);
+export default UserDetails;

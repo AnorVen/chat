@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MenuItem from './MenuItem';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
@@ -22,8 +22,14 @@ export default class Menu extends React.Component {
 
 	render() {
 		let renderMenuItem = this.props.menuItems.map((item, key) => (
-			<MenuItem href={item.menuhref} key={key} isActive={this.isActive}>
-				<Link to={item.menuhref}>{item.menutitle}</Link>
+			<MenuItem
+				href={item.menuhref}
+				key={key}
+				isActive={() => this.isActive(item.menuhref)}
+			>
+				<NavLink to={item.menuhref} activeClassName="selected">
+					{item.menutitle}
+				</NavLink>
 			</MenuItem>
 		));
 		return (
